@@ -110,5 +110,3 @@ class threadVideo:
 
                 self.video_shower.frame = image
                 self.dist = dist
-if __name__ == '__main__':   
-    threadVideo().start()
