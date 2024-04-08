@@ -61,7 +61,7 @@ class threadVideo:
     def show(self):
         with mp_hands.Hands(
         static_image_mode=False,
-        model_complexity=0,
+        model_complexity=1,
         max_num_hands=1,
         min_detection_confidence=0.5,
         min_tracking_confidence=0.5) as hands:
