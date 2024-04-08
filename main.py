@@ -1,8 +1,8 @@
 from video import threadVideo
 
 def main():
-    xyz = threadVideo()
-    xyz.start()
+    stream = threadVideo()
+    stream.start()
     
     while True:
         # TODO GAME LOGIC
