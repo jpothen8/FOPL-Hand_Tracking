@@ -83,13 +83,13 @@ class threadVideo:
                 if results.multi_hand_landmarks:
                     for hand_landmarks in results.multi_hand_landmarks:
                         thumb = hand_landmarks.landmark[4]
-                        middle = hand_landmarks.landmark[10]
+                        index = hand_landmarks.landmark[8]
 
                         bottom = hand_landmarks.landmark[0]
                         palm = hand_landmarks.landmark[9]
 
 
-                        dist = math.sqrt((thumb.x - middle.x)**2 + (thumb.y - middle.y)**2) / math.sqrt((bottom.x - palm.x)**2 + (bottom.y - palm.y)**2)
+                        dist = math.sqrt((thumb.x - index.x)**2 + (thumb.y - index.y)**2) / math.sqrt((bottom.x - palm.x)**2 + (bottom.y - palm.y)**2)
                         mp_drawing.draw_landmarks(
                             image,
                             hand_landmarks,
